@@ -1,0 +1,164 @@
+{
+  "project": "My Dashboard",
+  "version": "1.0.0",
+  "entrypoint": "index.html",
+  "totalTasks": 8,
+  "completedTasks": 8,
+  "status": "completed",
+  "tasks": [
+    {
+      "id": "TASK-01",
+      "title": "Project Scaffolding",
+      "status": "done",
+      "files": [
+        "index.html",
+        "css/style.css",
+        "js/app.js"
+      ],
+      "subtasks": [
+        { "label": "Create index.html", "done": true },
+        { "label": "Create css/ folder with style.css", "done": true },
+        { "label": "Create js/ folder with app.js", "done": true },
+        { "label": "Link stylesheet and script in index.html", "done": true }
+      ]
+    },
+    {
+      "id": "TASK-02",
+      "title": "HTML Structure",
+      "status": "done",
+      "files": [
+        "index.html"
+      ],
+      "subtasks": [
+        { "label": "Header section — greeting, clock, date", "done": true },
+        { "label": "Focus Timer card — display, 3 buttons, status text", "done": true },
+        { "label": "To-Do List card — form, list, footer", "done": true },
+        { "label": "Quick Links card — form, links grid", "done": true },
+        { "label": "Edit Task modal — overlay, input, save/cancel", "done": true }
+      ]
+    },
+    {
+      "id": "TASK-03",
+      "title": "CSS Styling",
+      "status": "done",
+      "files": [
+        "css/style.css"
+      ],
+      "subtasks": [
+        { "label": "CSS custom properties (color tokens, spacing, fonts)", "done": true },
+        { "label": "Reset and base styles", "done": true },
+        { "label": "Header / greeting layout", "done": true },
+        { "label": "3-column responsive grid layout", "done": true },
+        { "label": "Card component", "done": true },
+        { "label": "Button variants (primary, secondary, ghost, icon, sm)", "done": true },
+        { "label": "Focus Timer display (default, running, done states)", "done": true },
+        { "label": "Custom checkbox styling", "done": true },
+        { "label": "To-Do item (hover actions, done state, slide-in animation)", "done": true },
+        { "label": "Edit modal (overlay, scale-in animation)", "done": true },
+        { "label": "Quick Link button with favicon", "done": true },
+        { "label": "Responsive breakpoints (1100px, 680px)", "done": true },
+        { "label": "Scrollbar styling for lists", "done": true }
+      ]
+    },
+    {
+      "id": "TASK-04",
+      "title": "Greeting & Clock",
+      "status": "done",
+      "files": [
+        "js/app.js"
+      ],
+      "section": "Section 1 · Greeting & Clock",
+      "subtasks": [
+        { "label": "Display live time (HH:MM:SS), updates every second", "done": true },
+        { "label": "Display full date string", "done": true },
+        { "label": "Show greeting based on hour of day", "done": true }
+      ]
+    },
+    {
+      "id": "TASK-05",
+      "title": "Focus Timer",
+      "status": "done",
+      "files": [
+        "js/app.js"
+      ],
+      "section": "Section 2 · Focus Timer",
+      "subtasks": [
+        { "label": "25-minute (1500 seconds) countdown", "done": true },
+        { "label": "Start button — begins countdown, disabled if already running", "done": true },
+        { "label": "Stop button — pauses countdown", "done": true },
+        { "label": "Reset button — restores to 25:00", "done": true },
+        { "label": "Visual state changes (running → accent color, done → green + pulse)", "done": true },
+        { "label": "Status text updates (Ready / Focusing… / Paused / Session complete)", "done": true },
+        { "label": "Browser notification on session complete", "done": true },
+        { "label": "Request notification permission on page load", "done": true }
+      ]
+    },
+    {
+      "id": "TASK-06",
+      "title": "To-Do List",
+      "status": "done",
+      "files": [
+        "js/app.js"
+      ],
+      "section": "Section 3 · To-Do List",
+      "localStorageKey": "dashboard_todos",
+      "subtasks": [
+        { "label": "Add task via form submit or Enter key", "done": true },
+        { "label": "Render task list dynamically", "done": true },
+        { "label": "Toggle done state via checkbox", "done": true },
+        { "label": "Delete task via icon button", "done": true },
+        { "label": "Open edit modal pre-filled with task text", "done": true },
+        { "label": "Save edited task from modal", "done": true },
+        { "label": "Close modal on Save, Cancel, Escape, or overlay click", "done": true },
+        { "label": "Clear done button removes all completed tasks", "done": true },
+        { "label": "Task count display (remaining / total)", "done": true },
+        { "label": "Empty state message when list is empty", "done": true },
+        { "label": "Load tasks from localStorage on page load", "done": true },
+        { "label": "Save tasks to localStorage on every change", "done": true },
+        { "label": "XSS protection via escapeHtml()", "done": true }
+      ]
+    },
+    {
+      "id": "TASK-07",
+      "title": "Quick Links",
+      "status": "done",
+      "files": [
+        "js/app.js"
+      ],
+      "section": "Section 4 · Quick Links",
+      "localStorageKey": "dashboard_links",
+      "defaultLinks": [
+        { "name": "Google",   "url": "https://google.com" },
+        { "name": "GitHub",   "url": "https://github.com" },
+        { "name": "YouTube",  "url": "https://youtube.com" },
+        { "name": "MDN Docs", "url": "https://developer.mozilla.org" }
+      ],
+      "subtasks": [
+        { "label": "Add link via form (name + URL)", "done": true },
+        { "label": "Auto-prefix https:// if protocol is missing", "done": true },
+        { "label": "Render links as clickable buttons (open in new tab)", "done": true },
+        { "label": "Load favicons via Google Favicon API", "done": true },
+        { "label": "Delete link via hover button", "done": true },
+        { "label": "Empty state message when no links exist", "done": true },
+        { "label": "Pre-load 4 default links on first run", "done": true },
+        { "label": "Load links from localStorage on page load", "done": true },
+        { "label": "Save links to localStorage on every change", "done": true },
+        { "label": "XSS protection via escapeHtml() and escapeAttr()", "done": true }
+      ]
+    },
+    {
+      "id": "TASK-08",
+      "title": "Utilities",
+      "status": "done",
+      "files": [
+        "js/app.js"
+      ],
+      "section": "Utilities",
+      "subtasks": [
+        { "label": "uid() — unique ID generator (timestamp + random)", "done": true },
+        { "label": "escapeHtml() — sanitize text before inserting into DOM", "done": true },
+        { "label": "escapeAttr() — sanitize values used in HTML attributes", "done": true }
+      ]
+    }
+  ]
+}
